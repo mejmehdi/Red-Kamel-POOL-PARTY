@@ -159,7 +159,6 @@
             background-color: rgb(80, 138, 46);
             border-radius: 5px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
         }
 
         .concert-image {
@@ -246,56 +245,19 @@
         footer .container div {
             margin: 10px 0;
         }
+        .couple-pass {
+        opacity: 0;
+        transform: translateY(50px);
+        animation: fadeInUp 1s forwards 1s; /* Ajout d'un délai d'une seconde après l'animation précédente */
+    }
 
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 48px;
-            }
-
-            .hero p {
-                font-size: 20px;
-            }
-
-            .ticket-info .container {
-                padding: 10px;
-            }
-
-            .pass {
-                padding: 10px;
-            }
+    /* Animation pour le couple pass */
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
         }
-
-        @media (max-width: 576px) {
-            .hero h1 {
-                font-size: 36px;
-            }
-
-            .hero p {
-                font-size: 18px;
-            }
-
-            nav ul {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            nav ul li {
-                margin-left: 0;
-                margin-top: 10px;
-            }
-
-            nav ul li a {
-                padding: 10px 15px;
-            }
-
-            .ticket-info .container {
-                padding: 5px;
-            }
-
-            .pass {
-                padding: 10px;
-            }
-        }
+    }
     </style>
 </head>
 
@@ -324,7 +286,7 @@
         <section class="hero">
             <div class="overlay"></div>
             <div class="content text-center">
-                <h1>Pool partie!!!!</h1>
+                <h1>Pool party</h1>
                 <p>08, juin 2024</p>
                 <p>PALAIS ATLAS MARRAKECH</p>
             </div>
@@ -338,32 +300,44 @@
                     <img src="5.jpg" alt="Concert Image" class="concert-image img-fluid mb-4">
                 </div>
                 <div class="col-md-6">
-                    <h2>Tarifs pour l'événement :</h2>
+                    <h2>We have 4 packs for early bird:</h2>
+                    <!-- Contenu de la première div .pass -->
                     <div class="pass">
                         <h2>Normal pass</h2>
                         <p>300DH</p>
                     </div>
+                    <!-- Contenu pour le pack couple -->
                     <div class="pass">
-                        <h2>VIP pass pour deux personnes</h2>
-                        <p>
-                            Lit extérieur près de la piscine<br>
-                            Soda illimité<br>
-                            Bouteille de whisky ou de vodka
-                        </p>
-                        <p>600DH + 2 shots de vodka ou 2 sodas</p>
+                        <h2>-PACK COUPLE:</h2>
+                        <p>2 SHOTS OF VODKA</p>
+                        <p>OR</p>
+                        <p>2 SODA</p>
+                        <p>600DH</p>
                     </div>
+                    <!-- Contenu pour le VIP pass -->
                     <div class="pass">
-                        <h2>Pack spécial pour les filles</h2>
-                        <p>700DH + 3 boissons gratuites</p>
+                        <h2>VIP PASS FOR TWO PEOPLE</h2>
+                        <p>INCLUDES:</p>
+                        <p>ROOL SIDE OUTDOOR BED</p>
+                        <p>ILLIMITED SODA</p>
+                        <p>(WHISKY OR VODKA) BOTTLE</p>
+                    </div>
+                    <!-- Contenu pour le pack spécial pour les dames -->
+                    <div class="pass">
+                        <h2>SPECIAL PACK FOR LADIES</h2>
+                        <p>3 GIRLS</p>
+                        <p>3 free drinks</p>
+                        <p>700dh</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+
     <footer>
         <div class="container">
-            <div>&copy; 2024 red.kamel. Tous droits réservés.</div>
+            <div>&copy; 2024 red.kamel. </div>
             <div>
                 <a href="https://www.instagram.com/red.kamel" target="_blank">Instagram</a>
             </div>
